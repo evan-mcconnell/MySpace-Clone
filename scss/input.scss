@@ -1,0 +1,272 @@
+$dark-orange: #ff6600;
+$light-orange: #ffcc99;
+$light-blue: #6698CB;
+$dark-blue: #003399;
+$baby-blue: #d5e8fb;
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+body {
+  background-color: #e5e5e5;
+  font-size: 8pt;
+
+  #page {
+    @include flex-column;
+    align-items: center;
+    // text-align: center;
+  }
+}
+
+.topcontent {
+  display: flex;
+  width: 798px;
+  background-color: $dark-blue;
+  justify-content: space-between;
+  color: white;
+  height: 125px;
+  padding: 10px;
+  a {
+    color: white;
+  }
+  input {
+    height: 16px;
+  }
+  button {
+    height: 17px;
+    color: black;
+  }
+} //end of top content
+
+.nav-bar {
+  display: flex;
+  background-color: $light-blue;
+  padding: 0 20px;
+  justify-content: space-around;
+  height: 26px;
+  width: 798px;
+  a {
+    color: white;
+  }
+}
+
+.content {
+  @include flex-column;
+  height: 8800px;
+  width: 798px;
+  background-color: white;
+  flex-wrap: wrap-reverse;
+  align-items: flex-end;
+}
+
+.networking {
+  @include flex-column;
+  padding: 16px;
+  text-align: left;
+  width: 466px;
+}
+.network {
+  display: flex;
+  justify-content: center;
+  height: 73px;
+  border: 2px solid black;
+}
+h4 {
+  align-self: center;
+}
+.blog {
+  @include flex-column;
+  align-items: flex-start;
+}
+.blurb {
+  padding: 5px;
+}
+.orangey-head {
+  background-color: $light-orange;
+  color: $dark-orange;
+  font-size: 10pt;
+  padding-left: 10px;
+  margin-left: -5px;
+  font-weight: bold;
+}
+.orangey {
+  color: $dark-orange;
+  font-size: 10pt;
+}
+.friends {
+  @include flex-column;
+  padding: 5px;
+  width: 433px;
+
+  .friendspics {
+    display: flex;
+    width: 433px;
+    flex-wrap: wrap;
+  }
+  span {
+    font-size: 14px;
+    color: orange;
+  }
+  img {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px 10px 10px;
+  }
+  .friendslink {
+    align-self: flex-end;
+    font-weight: bold;
+  }
+  .friendslink a {
+    color: red;
+  }
+}
+.comments {
+  @include flex-column;
+  margin-bottom: -10px;
+  padding: 5px;
+}
+.comments span {
+  font-size: 14px;
+  color: $light-orange;
+}
+.comment {
+  display: flex;
+  width: 427px;
+  margin-bottom: 3px;
+}
+.commentprofile {
+  width: 158px;
+  background-color: rgb(255, 153, 51);
+  text-align: center;
+}
+.commentusername p {
+  font-weight: bold;
+  margin-top: 10px;
+  color: $dark-blue;
+}
+.commentuserpicture img {
+  width: 90px;
+  margin-bottom: 30px;
+}
+.commentcontent {
+  width: 269px;
+  background-color: $light-orange;
+  margin-left: 2px;
+  padding: 5px;
+}
+.date {
+  font-weight: bold;
+  font-size: 15px;
+}
+#addComment {
+  margin-right: 5px;
+  align-self: flex-end;
+}
+
+.profile {
+  padding: 20px;
+  padding-top: 0px;
+  width: 304px;
+  h2 {
+    text-align: left;
+    font-size: 14pt;
+  }
+  .profile > p {
+    margin-top: -10px;
+    padding-left: 20px;
+    text-align: left;
+  }
+  .info {
+    display: flex;
+  }
+  .info img {
+    width: 170px;
+    height: 138px;
+  }
+  .tomInfo {
+    margin-left: 15px;
+  }
+  .tomInfo p {
+    text-align: left;
+    line-height: 5px;
+  }
+  .panel {
+    border-color: $light-blue;
+    width: 304px;
+    height: 151px;
+    border-radius: 0;
+  }
+  .panel-holder {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .contact .panel-heading {
+    background-color: $light-blue;
+  }
+  .panel-heading {
+    background-color: $light-blue;
+    height: 17px;
+    width: 100%;
+    color: white;
+  }
+  .contact h2 {
+    font-size: 12px;
+    margin-top: -8px;
+  }
+  .panel-body {
+    display: flex;
+    height: 151px;
+    margin-top: -15px;
+  }
+  .url {
+    text-align: left;
+    border: 1px solid $light-blue;
+    padding-left: 4px;
+    width: 304px;
+  }
+  .url p {
+    margin: 0;
+  }
+  .interests {
+    margin-top: 20px;
+  }
+  .interests h2 {
+    font-size: 12px;
+    margin-top: -8px;
+  }
+  .interests .panel-heading {
+    background-color: $light-blue;
+  }
+  .interest {
+    display: flex;
+    width: 300px;
+    margin-bottom: 1px;
+    margin-left: -10px;
+  }
+  .interestCategory {
+    width: 107px;
+    background-color: #b1d0f0;
+    text-align: center;
+    p {
+      font-weight: bold;
+      margin-top: 10px;
+      color: $dark-blue;
+    }
+  }
+  .interestContent {
+    width: 184px;
+    background-color: $baby-blue;
+    margin-left: 2px;
+    padding: 5px;
+  }
+}
+
+
+
+
+
+
+//end of page

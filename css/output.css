@@ -1,0 +1,221 @@
+body {
+  background-color: #e5e5e5;
+  font-size: 8pt; }
+  body #page {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.topcontent {
+  display: flex;
+  width: 798px;
+  background-color: #003399;
+  justify-content: space-between;
+  color: white;
+  height: 125px;
+  padding: 10px; }
+  .topcontent a {
+    color: white; }
+  .topcontent input {
+    height: 16px; }
+  .topcontent button {
+    height: 17px;
+    color: black; }
+
+.nav-bar {
+  display: flex;
+  background-color: #6698CB;
+  padding: 0 20px;
+  justify-content: space-around;
+  height: 26px;
+  width: 798px; }
+  .nav-bar a {
+    color: white; }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 8800px;
+  width: 798px;
+  background-color: white;
+  flex-wrap: wrap-reverse;
+  align-items: flex-end; }
+
+.networking {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  text-align: left;
+  width: 466px; }
+
+.network {
+  display: flex;
+  justify-content: center;
+  height: 73px;
+  border: 2px solid black; }
+
+h4 {
+  align-self: center; }
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.blurb {
+  padding: 5px; }
+
+.orangey-head {
+  background-color: #ffcc99;
+  color: #ff6600;
+  font-size: 10pt;
+  padding-left: 10px;
+  margin-left: -5px;
+  font-weight: bold; }
+
+.orangey {
+  color: #ff6600;
+  font-size: 10pt; }
+
+.friends {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 433px; }
+  .friends .friendspics {
+    display: flex;
+    width: 433px;
+    flex-wrap: wrap; }
+  .friends span {
+    font-size: 14px;
+    color: orange; }
+  .friends img {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px 10px 10px; }
+  .friends .friendslink {
+    align-self: flex-end;
+    font-weight: bold; }
+  .friends .friendslink a {
+    color: red; }
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -10px;
+  padding: 5px; }
+
+.comments span {
+  font-size: 14px;
+  color: #ffcc99; }
+
+.comment {
+  display: flex;
+  width: 427px;
+  margin-bottom: 3px; }
+
+.commentprofile {
+  width: 158px;
+  background-color: #ff9933;
+  text-align: center; }
+
+.commentusername p {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #003399; }
+
+.commentuserpicture img {
+  width: 90px;
+  margin-bottom: 30px; }
+
+.commentcontent {
+  width: 269px;
+  background-color: #ffcc99;
+  margin-left: 2px;
+  padding: 5px; }
+
+.date {
+  font-weight: bold;
+  font-size: 15px; }
+
+#addComment {
+  margin-right: 5px;
+  align-self: flex-end; }
+
+.profile {
+  padding: 20px;
+  padding-top: 0px;
+  width: 304px; }
+  .profile h2 {
+    text-align: left;
+    font-size: 14pt; }
+  .profile .profile > p {
+    margin-top: -10px;
+    padding-left: 20px;
+    text-align: left; }
+  .profile .info {
+    display: flex; }
+  .profile .info img {
+    width: 170px;
+    height: 138px; }
+  .profile .tomInfo {
+    margin-left: 15px; }
+  .profile .tomInfo p {
+    text-align: left;
+    line-height: 5px; }
+  .profile .panel {
+    border-color: #6698CB;
+    width: 304px;
+    height: 151px;
+    border-radius: 0; }
+  .profile .panel-holder {
+    display: flex;
+    flex-flow: column wrap; }
+  .profile .contact .panel-heading {
+    background-color: #6698CB; }
+  .profile .panel-heading {
+    background-color: #6698CB;
+    height: 17px;
+    width: 100%;
+    color: white; }
+  .profile .contact h2 {
+    font-size: 12px;
+    margin-top: -8px; }
+  .profile .panel-body {
+    display: flex;
+    height: 151px;
+    margin-top: -15px; }
+  .profile .url {
+    text-align: left;
+    border: 1px solid #6698CB;
+    padding-left: 4px;
+    width: 304px; }
+  .profile .url p {
+    margin: 0; }
+  .profile .interests {
+    margin-top: 20px; }
+  .profile .interests h2 {
+    font-size: 12px;
+    margin-top: -8px; }
+  .profile .interests .panel-heading {
+    background-color: #6698CB; }
+  .profile .interest {
+    display: flex;
+    width: 300px;
+    margin-bottom: 1px;
+    margin-left: -10px; }
+  .profile .interestCategory {
+    width: 107px;
+    background-color: #b1d0f0;
+    text-align: center; }
+    .profile .interestCategory p {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #003399; }
+  .profile .interestContent {
+    width: 184px;
+    background-color: #d5e8fb;
+    margin-left: 2px;
+    padding: 5px; }
+
+/*# sourceMappingURL=output.css.map */

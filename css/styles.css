@@ -61,7 +61,7 @@ button {
 
 .networking {
   display: flex;
-  height: 8800px;
+  /* height: 8800px; */
   width: 466px;
   flex-direction: column;
   padding: 16px;
@@ -138,16 +138,16 @@ h4 {
   color: red;
 }
 
-.comments span {
-  font-size: 14px;
-  color: orange;
-}
-
 .comments {
   padding: 5px;
   display: flex;
   flex-direction: column;
   margin-bottom: -10px;
+}
+
+.comments span {
+  font-size: 14px;
+  color: orange;
 }
 
 .comment {
